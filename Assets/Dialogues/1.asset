@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 1
+  idCompletedRequired: 0
+  speaker: 2
+  dialogueText: "\xBFQui\xE9n eres? "
+  helpText: 
+  options:
+  - responseText: "Soy Einar, \xBFqui\xE9n eres t\xFA?"
+    nextNode: {fileID: 11400000, guid: d8bb249f7e678ac4d89a3be876d6606b, type: 2}
+  - responseText: "Soy el encargado del laboratorio, \xBFY t\xFA?"
+    nextNode: {fileID: 11400000, guid: b88c8abcdf3703a4794a06b655cdec8c, type: 2}
+  - responseText: "\xBFEst\xE1s intentando hackear el sistema?"
+    nextNode: {fileID: 11400000, guid: ba73df3b253224b4cbcd3b9b5e00ad62, type: 2}

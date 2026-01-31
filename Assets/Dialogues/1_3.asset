@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 1_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 4
+  idCompletedRequired: 0
+  speaker: 2
+  dialogueText: "H\xE1, veo que sabes del tema, no han puesto una planta a trabajar."
+  helpText: 
+  options:
+  - responseText: "\xBFPor qu\xE9 est\xE1s intentado coger datos?"
+    nextNode: {fileID: 0}
+  - responseText: "\xBFQu\xE9 te traes entre manos?"
+    nextNode: {fileID: 0}
