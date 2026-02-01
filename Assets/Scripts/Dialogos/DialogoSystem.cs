@@ -58,20 +58,25 @@ public class DialogoSystem : MonoBehaviour
     {
         if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
         {
-            OnReset?.Invoke();
-
-            foreach (var nodo in nodosUsados)
-            {
-                nodo.isCompleted = false;
-                nodo.isRefused = false;
-            }
-            nodosUsados.Clear();
-
-            if (startDialogue != null)
-                StartDialogue(startDialogue);
+            TotalReset();
         }
     }
 #endif
+
+    public void TotalReset()
+    {
+        OnReset?.Invoke();
+
+        foreach (var nodo in nodosUsados)
+        {
+            nodo.isCompleted = false;
+            nodo.isRefused = false;
+        }
+        nodosUsados.Clear();
+
+        if (startDialogue != null)
+            StartDialogue(startDialogue);
+    }
 
     void OnDestroy()
     {

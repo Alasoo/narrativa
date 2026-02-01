@@ -41,6 +41,7 @@ namespace MyStateMachine
         public override void Tick(float deltaTime)
         {
             if (DialogoSystem.Instance.dialoguePanel.activeSelf) return;
+            if (EndGameManager.Instance.endCanvas.activeSelf) return;
             if (Game.Instance != null && Game.Instance.gameObject.activeSelf) return;
 
             movement = stateMachine.inputReader.movementValue;
@@ -92,6 +93,7 @@ namespace MyStateMachine
         {
             if (DialogoSystem.Instance.dialoguePanel.activeSelf) return;
             if (Game.Instance != null && Game.Instance.gameObject.activeSelf) return;
+            if (EndGameManager.Instance.endCanvas.activeSelf) return;
 
             Move(movement * stateMachine.moveSpeedBase, fixedDeltatime);
         }

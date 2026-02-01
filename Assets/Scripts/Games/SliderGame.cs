@@ -35,7 +35,7 @@ public class SliderGame : Game
     void OnEnable()
     {
         StartCoroutine(MoveHandleSlider());
-        StartGame(4);
+        StartGame(3);
     }
 
     void OnDisable()

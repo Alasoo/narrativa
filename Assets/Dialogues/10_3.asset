@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
-  m_Name: 9_3
+  m_Name: 10_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  id: 93
+  id: 10_3
   idCompletedRequired:
-  - {fileID: 11400000, guid: dc2f31c48d9fc0b429712bab2fdec9bd, type: 2}
+  - {fileID: 11400000, guid: 9c3252074e8549943a2ac8b18300a3f4, type: 2}
   idCompletedRequired_and: []
   nodesToComplete: []
   nodesToRefuse: []
   speaker: 2
-  dialogueText: "Veo que ya hab\xE9is encendido el ordenador que controla el minado
-    de helioxita. Ir\xE9 al laboratorio en breves."
-  helpText: "Ves a la \xFAltima sala"
+  dialogueText: "\xBFTe crees que enga\xF1ar\xEDas al jefe? \xA1Olv\xEDdate de tu
+    tit\xE1n y de tu ciudad! "
+  helpText: 
   endAndComplete: 1
   options: []
   isCompleted: 0

@@ -20,7 +20,7 @@ MonoBehaviour:
   nodesToRefuse: []
   speaker: 2
   dialogueText: "Asaltar\xE9 el laboratorio y coger\xE9 los datos a la fuerza"
-  helpText: Ves al ordenador del inicio
+  helpText: "Ves a la \xFAltima sala"
   endAndComplete: 1
   options: []
   isCompleted: 0

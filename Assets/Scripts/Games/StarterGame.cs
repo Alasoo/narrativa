@@ -43,8 +43,8 @@ public class StarterGame : MonoBehaviour
     private void OnReset()
     {
         game.onEndGame += OnEndGame;
-
-        game.gameObject.SetActive(false);
+        if (game != null && game.gameObject != null)
+            game.gameObject.SetActive(false);
         dialogue.isCompleted = false;
         dialogue.isRefused = false;
         gameEnd = false;

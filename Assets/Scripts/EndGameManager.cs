@@ -12,6 +12,9 @@ public class EndGameManager : MonoBehaviour
     [SerializeField] private DialogueNode dialogue93;
     [SerializeField] private DialogueNode dialogue94;
 
+    [Header("UI")]
+    [field: SerializeField] public GameObject endCanvas { get; private set; }
+
 
     public List<DialogueNode> dialoguesAvailable = new();
 
@@ -21,6 +24,8 @@ public class EndGameManager : MonoBehaviour
 
     private List<DialogueNode> dialogues = new();
 
+
+
     void Awake()
     {
         Instance = this;
@@ -29,6 +34,8 @@ public class EndGameManager : MonoBehaviour
 
     void Start()
     {
+
+        endCanvas.SetActive(false);
         DialogoSystem.Instance.OnReset += OnReset;
         DialogoSystem.Instance.OnComplete += OnComplete;
         dialogues.Add(dialogue91);
@@ -50,6 +57,7 @@ public class EndGameManager : MonoBehaviour
         anim.SetBool("do2", false);
         anim.SetBool("do3", false);
         anim.SetBool("do4", false);
+        endCanvas.SetActive(false);
     }
 
     private void OnComplete(DialogueNode nodeComplete)
@@ -59,6 +67,7 @@ public class EndGameManager : MonoBehaviour
             dialoguesAvailable.Remove(nodeComplete);
             //
             Debug.Log("FIN DEL JUEGO?");
+            endCanvas.SetActive(true);
         }
 
         foreach (var dialogue in dialogues)
@@ -121,9 +130,9 @@ public class EndGameManager : MonoBehaviour
 
     public void EnterCharacter()
     {
-        if (dialogues.Count <= 0) return;
-        Debug.Log($"Ejecutamos diálogo: {dialogues[0]}");
-        DialogoSystem.Instance.StartDialogue(dialogues[0]);
+        if (dialoguesAvailable.Count <= 0) return;
+        Debug.Log($"Ejecutamos diálogo: {dialoguesAvailable[0]}");
+        DialogoSystem.Instance.StartDialogue(dialoguesAvailable[0]);
     }
 
 
@@ -131,14 +140,20 @@ public class EndGameManager : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (CharacterStateMachine.Instance.gameObject != collision.gameObject) return;
-        if (!dialogues.Contains(DialogoSystem.Instance.lastMissionCompleted)) return;
-
-        PlayAnimation(DialogoSystem.Instance.lastMissionCompleted);
+        if (dialoguesAvailable.Count <= 0) return;
+        PlayAnimation(dialoguesAvailable[0]);
     }
 
 
-    void OnTriggerExit2D(Collider2D collision)
+
+    public void OnRepeatGame()
     {
+        DialogoSystem.Instance.TotalReset();
+    }
+
+    public void OnQuitGame()
+    {
+        Application.Quit();
     }
 
 

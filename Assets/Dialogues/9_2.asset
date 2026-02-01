@@ -21,7 +21,7 @@ MonoBehaviour:
   speaker: 2
   dialogueText: "Veo que ya hab\xE9is encendido el ordenador que controla el minado
     de helioxita. Ir\xE9 al laboratorio en breves."
-  helpText: Ves al ordenador del inicio
+  helpText: "Ves a la \xFAltima sala"
   endAndComplete: 1
   options: []
   isCompleted: 0
