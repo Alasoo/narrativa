@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 3
+  idCompletedRequired:
+  - {fileID: 11400000, guid: 39f05746cc178fb46b3cb8dcb45a9a32, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 2
+  dialogueText: "Vaya has activado la m\xE1quina correcta, veo que entiendes del
+    tema. Hagamos un acuerdo, me ayudas a conseguir helioxita de tu kowloon y yo
+    ser\xE9 amistoso con vuestra ciudad. Habla con tu amigo que est\xE1 en la sala
+    3"
+  helpText: "Habla con tu compa\xF1ero de la sala 3"
+  endAndComplete: 1
+  options: []

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 9_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 94
+  idCompletedRequired:
+  - {fileID: 11400000, guid: d9de9eeeb7bc94f4da849d5779ce1e80, type: 2}
+  idCompletedRequired_and: []
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 2
+  dialogueText: "Asaltar\xE9 el laboratorio y coger\xE9 los datos a la fuerza"
+  helpText: Ves al ordenador del inicio
+  endAndComplete: 1
+  options: []
+  isCompleted: 0
+  isRefused: 0

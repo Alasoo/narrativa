@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 7
+  idCompletedRequired:
+  - {fileID: 11400000, guid: 619ec64472184d042a3d6209cb507430, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 0
+  dialogueText: "Ya he encendido el ordenador, voy a preguntarle ahora qu\xE9 debo
+    hacer."
+  helpText: "Habla con tu compa\xF1ero"
+  endAndComplete: 1
+  options: []

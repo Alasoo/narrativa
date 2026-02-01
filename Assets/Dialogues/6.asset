@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 6
+  idCompletedRequired:
+  - {fileID: 11400000, guid: 508c42bf562077f45b819892bc161393, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 0
+  dialogueText: 'Perfecto, ahora necesito que enciendas el sistema, accede al ordenador
+    que tengo al lado '
+  helpText: "Ves al ordenador junto a tu compa\xF1ero"
+  endAndComplete: 1
+  options: []

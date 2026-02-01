@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
   m_Name: 1_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  id: 2
-  idCompletedRequired: 0
+  id: 11
+  idCompletedRequired: 
   speaker: 2
   dialogueText: "No te importa qui\xE9n sea, l\xE1rgate"
   helpText: 
-  options: []
+  endAndComplete: 1
+  options:
+  - responseText: "No, no me importa qui\xE9n seas, no vas a conseguir nada"
+    nextNode: {fileID: 11400000, guid: cf1c783222b685443a15df9c1dbbc60b, type: 2}
+  - responseText: "Claro que me importa, est\xE1s intentando robar nuestros datos.
+      \xBFQu\xE9 quieres conseguir con estos datos?"
+    nextNode: {fileID: 11400000, guid: d13580cd9217e0641be042455c1819ab, type: 2}

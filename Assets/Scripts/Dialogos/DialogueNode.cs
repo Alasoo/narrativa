@@ -1,11 +1,17 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 [CreateAssetMenu(fileName = "NuevoNodo", menuName = "Dialogo/Nodo")]
 public class DialogueNode : ScriptableObject
 {
-    public int id;
-    public int idCompletedRequired = -1;
+    public string id;
+    [Header("Completed Required (OR)")]
+    public List<DialogueNode> idCompletedRequired = new();
+    [Header("Completed Required (AND)")]
+    public List<DialogueNode> idCompletedRequired_and = new();
+    public List<DialogueNode> nodesToComplete = new();
+    public List<DialogueNode> nodesToRefuse = new();
 
     [Header("Info del Hablante")]
     public CharacterProfile speaker; // Quién habla
@@ -14,10 +20,23 @@ public class DialogueNode : ScriptableObject
     [TextArea(3, 10)]
     public string helpText; // Lo que dice
 
-    public bool endAndComplete = false;
+    public bool endAndComplete = true;
 
     [Header("Opciones del Player")]
     public List<DialogueOption> options; // Lista de respuestas posibles
+
+
+
+
+    [Header("NO TOCAR!!!!")]
+    public bool isCompleted = false;
+    public bool isRefused = false;
+
+    void OnDisable()
+    {
+        isCompleted = false;
+        isRefused = false;
+    }
 }
 
 // Clase auxiliar para definir las respuestas
@@ -43,3 +62,4 @@ public enum CharacterProfile
     Npc8,
     Npc9,
 }
+

@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
   m_Name: 1_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  id: 4
-  idCompletedRequired: 0
+  id: 13
+  idCompletedRequired: 
   speaker: 2
-  dialogueText: "H\xE1, veo que sabes del tema, no han puesto una planta a trabajar."
-  helpText: 
-  options:
-  - responseText: "\xBFPor qu\xE9 est\xE1s intentado coger datos?"
-    nextNode: {fileID: 0}
-  - responseText: "\xBFQu\xE9 te traes entre manos?"
-    nextNode: {fileID: 0}
+  dialogueText: "H\xE1, veo que sabes del tema, no han puesto una planta a trabajar.\n\xBFEntonces
+    sabr\xE1s qu\xE9 m\xE1quina tienes que activar ahora verdad?"
+  helpText: "Activa la m\xE1quina azul (sala 1) o la m\xE1quina verde (sala 2)"
+  endAndComplete: 1
+  options: []

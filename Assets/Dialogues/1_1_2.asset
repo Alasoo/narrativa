@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 1_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 112
+  idCompletedRequired: 
+  speaker: 2
+  dialogueText: "Necesito estos datos para conseguir kowloon, tu tit\xE1n es muy
+    interesante, es d\xF3cil, lo quiero para mantenerme con vida"
+  helpText: 
+  endAndComplete: 1
+  options:
+  - responseText: "\xBFQu\xE9? no te voy a dejar conseguir nada"
+    nextNode: {fileID: 11400000, guid: 9f71a411143b76f469b8f8bd8c2a5456, type: 2}
+  - responseText: Podemos ayudarte, no hace falta llegar a ese extremo
+    nextNode: {fileID: 11400000, guid: 465001257d7939142a7fbee79fd4b98c, type: 2}

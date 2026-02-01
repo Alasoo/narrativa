@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 8_1_1_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 8114
+  idCompletedRequired: []
+  idCompletedRequired_and:
+  - {fileID: 11400000, guid: 2db8718d9051d404d94f78ba49647693, type: 2}
+  - {fileID: 11400000, guid: 891ecba9927d2ae458cdfa41908fa9f1, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 2
+  dialogueText: Vale, ves a hablar con el individuo de nuevo, ten mucho cuidado con
+    lo que te dice
+  helpText: Ves al ordenador del inicio
+  endAndComplete: 1
+  options: []

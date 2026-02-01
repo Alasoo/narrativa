@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
   m_Name: 1_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  id: 3
-  idCompletedRequired: 0
+  id: 12
+  idCompletedRequired: 
   speaker: 2
-  dialogueText: Necesito los datos de tu ordenador.
+  dialogueText: Soy Giovanni y necesito los datos de tu ordenador.
   helpText: 
-  options: []
+  endAndComplete: 1
+  options:
+  - responseText: "\xBFPor qu\xE9 necesitar\xEDas tal cosa? Podemos ayudarte"
+    nextNode: {fileID: 11400000, guid: ca6240f516f67aa43a6cfe0cfcde6648, type: 2}
+  - responseText: No vas a conseguir hackear nada, tenemos un sistema de defensa
+      muy bueno
+    nextNode: {fileID: 11400000, guid: 010da23fc0748f843936755e8a9c9106, type: 2}

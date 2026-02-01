@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 4-1_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: -41
+  idCompletedRequired: []
+  nodesToComplete:
+  - {fileID: 11400000, guid: 17610b3ea5118aa41980808dd30a63c8, type: 2}
+  nodesToRefuse: []
+  speaker: 3
+  dialogueText: "\xBF\xA1\xA1\xA1QU\xC9!!!? R\xE1pido tr\xE1eme una caja con herramientas,
+    est\xE1n justo al salir de esta sala. "
+  helpText: "Coje una caja, est\xE1 junto a la puerta de la sala 3"
+  endAndComplete: 1
+  options: []

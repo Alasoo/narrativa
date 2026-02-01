@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 3-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: -3
+  idCompletedRequired:
+  - {fileID: 11400000, guid: 4929934a2f9f08b47933ba84181f6b20, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 2
+  dialogueText: "Te has equivocado de m\xE1quina, gracias por recopilar todos tus
+    datos, ahora me ser\xE1 f\xE1cil invadir to Kowloon y atacar a tu tit\xE1n."
+  helpText: "Habla con tu compa\xF1ero de la sala 3"
+  endAndComplete: 1
+  options: []

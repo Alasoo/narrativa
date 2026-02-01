@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 1
-  idCompletedRequired: 0
+  idCompletedRequired:
+  - {fileID: 11400000, guid: 1705a60f79bb6e743969f4a58f592888, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
   speaker: 2
   dialogueText: "\xBFQui\xE9n eres? "
   helpText: 
+  endAndComplete: 1
   options:
   - responseText: "Soy Einar, \xBFqui\xE9n eres t\xFA?"
     nextNode: {fileID: 11400000, guid: d8bb249f7e678ac4d89a3be876d6606b, type: 2}

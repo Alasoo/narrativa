@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 2-1_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: -21
+  idCompletedRequired: 
+  nodesToComplete:
+  - {fileID: 11400000, guid: 11d1ee82ed5428e408ebaf572647cc81, type: 2}
+  nodesToRefuse:
+  - {fileID: 11400000, guid: 8b54c1c0620cfc444a2a93e5d4680c00, type: 2}
+  speaker: 1
+  dialogueText: "Ya est\xE1, deber\xEDa ir de nuevo al ordenador para ver si est\xE1
+    correcto. "
+  helpText: Ves al ordenador principal de nuevo
+  endAndComplete: 1
+  options: []

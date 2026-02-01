@@ -15,6 +15,7 @@ namespace MyStateMachine
 
         public static CharacterStateMachine Instance;
 
+        private Vector2 startPos;
 
         void Awake()
         {
@@ -23,15 +24,21 @@ namespace MyStateMachine
 
         private void Start()
         {
+            startPos = transform.position;
             SwitchState(new PlayerMoveState(this));
+            DialogoSystem.Instance.OnReset += OnReset;
+
+        }
+
+        void OnDestroy()
+        {
+            DialogoSystem.Instance.OnReset -= OnReset;
         }
 
 
-
-
-        private void OnEnable()
+        private void OnReset()
         {
-
+            transform.position = startPos;
         }
 
 

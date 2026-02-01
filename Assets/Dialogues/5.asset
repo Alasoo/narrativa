@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e6f538daa9844cbab8b76bed79868, type: 3}
+  m_Name: 5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 5
+  idCompletedRequired:
+  - {fileID: 11400000, guid: c8504b04280a2644c84c65d7879ef23e, type: 2}
+  - {fileID: 11400000, guid: 405ac5609fe241a4ba0c37d6abb24cb0, type: 2}
+  - {fileID: 11400000, guid: 2db8718d9051d404d94f78ba49647693, type: 2}
+  - {fileID: 11400000, guid: 5b673b3c6dc8f314296e03e500f4732e, type: 2}
+  nodesToComplete: []
+  nodesToRefuse: []
+  speaker: 0
+  dialogueText: Coges la caja de herramientas
+  helpText: "Vuelve a hablar con tu compa\xF1ero"
+  endAndComplete: 1
+  options: []
